@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./css/Bilder/Logo/Logo.png">
+    <link rel="stylesheet" href="./css/color.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/app.js"></script>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <title>Dronningens gate 11</title>
+    <meta name="description" content="Sameiet dronningens gate 11">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="./css/Bilder/Logo/Logo dark.svg" alt="logo"> 
+            </div>
+            <div class="menu">
+                <img src="./css/Bilder/Logo/icon/hamburger.svg" class="mobile-menu-icon" alt="menu">
+            </div> 
+            <ul class="nav">
+                <li><h4>Dokumenter</h4></li>
+                <li><h4>Forretningsfører</h4></li>
+                <button class="button-primary"><h4 class="white">Kontakt</h4></button>
+            </ul>
+        </nav>
+
+        <nav class="overlay-menu hidden">
+            <div class="close">
+                <img src="./css/Bilder/Logo/icon/x.svg" alt="">
+            </div>
+            <ul>
+                <li><h3 class="white">Dokumenter</h3></li>
+                <li><h3 class="white">Forretningsfører</h3></li>
+            </ul>
+            <img src="./css/Bilder/Logo/Logo white.svg" alt="">
+        </nav>
+        <div class="background"></div>
+    <!-- <img src="./css/Bilder/20230927_162546.jpg" alt="">-->
+    </header>
+    <main>
+        <div class="text-box">
+            <h1>Sameiet Dronningens gate 11 i Sandefjord</h1>
+            <div class="min-width">
+                <p>Dronningensgate 11 er en solid 
+                    murbygning i Jugendstil plassert i Sandefjord 
+                    sentrum beste del. I dag består sameiet av 15 
+                    leiligheter fordelt over tre etasjer, samt 6 
+                    næringslokaler i første etasje.
+                </p>
+            </div>
+        </div>
+        <div class="members">
+            <h2>Styremedlemmer</h2>
+            <div class="member-container">
+                <div class="member-box">
+                    <div class="lise"></div>
+                    <div class="text-box-small">
+                        <h3>Forretningsfører</h3>
+                        <div class="p-small-SB">
+                            Kari Lise Bjølgerud
+                        </div>
+                        <a href="">bjolgerud@frujustitia.no</a>
+                    </div>
+                </div>        
+                <div class="member-box">
+                    <div class="arne"></div>
+                    <div class="text-box-small">
+                        <h3>Styreleder</h3>
+                        <div class="p-small-SB">
+                            Arne Sperbund
+                        </div>
+                        <a href="">sperbund@gmail.com</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="member-container gap">
+                <div class="member-box">
+                    <div class="tom"></div>
+                    <div class="text-box-small">
+                        <h3>Styreleder</h3>
+                        <div class="p-small-SB">
+                            Jan Petter Lillelien
+                        </div>
+                        <a href="">jpl@acn.as</a>
+                    </div>
+                </div>
+                <div class="member-box">
+                    <div class="tom"></div>
+                    <div class="text-box-small">
+                        <h3>Styreleder</h3>
+                        <div class="p-small-SB">
+                            Terje Løken
+                        </div>
+                        <a href="">terje.tel@gmail.com</a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="document">
+            <div class="text-box">
+                <h2>Dokumenter</h2>
+                <p>Informasjon om Dronningens gate 11</p>
+            </div>
+            <div class="document-container">
+                <div class="document-box">
+                    <p class="p-large white">Vedtekter</p>
+                </div>
+                <div class="document-box">
+                    <p class="p-large-SB white">Husordensregler</p>
+                </div>
+                <div class="document-box">
+                    <p class="p-large-SB white">Resultat- og balanse-regnskap
+                        for siste året</p>
+                </div>
+                <div class="document-box">
+                    <p class="p-large-SB white">Styrets årsberetning</p>
+                </div>
+            </div>
+            <button class="button-secondary"><p class="white">Arkiv årsrapporter</p></button>
+        </div>
+    </main>
+    <section>
+        <div class="contact-container">
+            <div class="contact">
+                <div class="text-box">
+                    <h2>Kontakt</h2>
+                    <p>Ønsker du å komme i kontakt med styret? Skriv en melding, vi svarer deg på e-post eller telefon.</p>
+                </div>
+            </div>
+            <div class="maps">
+                <div class="text-box">
+                    <h2>Her er vi</h2>
+                    <p>Dronningens gate 11, 3211 Sandefjord</p>
+                </div>
+                <div id="map"></div>
+            </div>
+            
+        </div>
+    </section>
+    
+
+
+</body>
+</html>
