@@ -86,7 +86,7 @@
                 <div class="member-box">
                     <div class="tom"></div>
                     <div class="text-box-small">
-                        <h3>Styreleder</h3>
+                        <h3>Styremedlem</h3>
                         <div class="p-small-SB">
                             Jan Petter Lillelien
                         </div>
@@ -96,7 +96,7 @@
                 <div class="member-box">
                     <div class="tom"></div>
                     <div class="text-box-small">
-                        <h3>Styreleder</h3>
+                        <h3>Styremedlem</h3>
                         <div class="p-small-SB">
                             Terje Løken
                         </div>
@@ -131,21 +131,43 @@
     <section>
         <div class="contact-container">
             <div class="contact">
-                <div class="text-box">
+                <div class="text-box-padding">
                     <h2>Kontakt</h2>
                     <p>Ønsker du å komme i kontakt med styret? Skriv en melding, vi svarer deg på e-post eller telefon.</p>
                 </div>
+                <div>
+                    <form action="https://formsubmit.co/sofiaskarberg@hotmail.com" method="POST">
+                        <!-- <input type="hidden" name="_cc" value="another@email.com, another@email.com">-->
+                        <input type="hidden" name="_subject" value="Mail fra Dronningens gate 11">
+                        <input type="hidden" name="_captcha" value="false">
+                        <label for="fname">Navn:</label>
+                        <input type="text" name="fname" placeholder="Navn" required>
+                        <label for="email">E-post:</label>
+                        <input type="email" name="email" placeholder="E-post" required>
+                        <label for="phone">Telefon:</label>
+                        <input type="tel" name="phone" placeholder="Telefon" required>
+                        <label for="message">Din melding:</label>
+                        <input type="textarea" name="message" placeholder="Din melding" required>
+                        <input type="button" value="Send">
+                    </form>
+                </div>
             </div>
             <div class="maps">
-                <div class="text-box">
+                <div class="text-box-left">
                     <h2>Her er vi</h2>
                     <p>Dronningens gate 11, 3211 Sandefjord</p>
                 </div>
                 <div id="map"></div>
             </div>
-            
         </div>
     </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>Kari Lise Bjølgerud</h2>
+            </div>
+        </div>
+    </footer>
     
 
 

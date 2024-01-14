@@ -228,6 +228,19 @@ header img {
         gap: 1.44444rem;
     }
 
+    .text-box-padding {
+        display: flex;
+        flex-direction: column;
+        gap: 1.44444rem;
+        padding: 0px 50px 0px 50px;
+    }
+
+    .text-box-left {
+        display: flex;
+        flex-direction: column;
+        gap: 1.44444rem;
+    }
+
     .min-width {
         width: 41rem;
     }
@@ -370,8 +383,8 @@ header img {
 
 .contact-container {
     display: flex;
-    padding: 2.22222rem 1.11111rem;
-    flex-direction: column;
+    padding: 2.22222rem 3.11111rem;
+    /*flex-direction: column;*/
     align-items: flex-start;
     gap: 2.22222rem;
     align-self: stretch;
@@ -384,6 +397,7 @@ header img {
     align-items: flex-start;
     gap: 1rem;
     align-self: stretch;
+    width: -webkit-fill-available;
 }
 
 .contact {
@@ -392,4 +406,71 @@ header img {
     align-items: center;
     gap: 1rem;
     align-self: stretch;
+    width: -webkit-fill-available;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input {
+    width: 26rem;
+    padding: 12px 12px;
+    margin: 0px 0px 8px 0px;
+    box-sizing: border-box;
+    border: 2px solid var(--blue)
+}
+
+input[type=textarea] {
+    width: 100%;
+    height: 90px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid var(--blue);
+}
+
+label {
+    font-family: var(--font-paragraph);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+input[type=button] {
+    display: flex;
+    padding: 0.77778rem 1.11111rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.55556rem;
+    background-color: var(--grey);
+    border: none;
+    color: var(--white);
+    font-size: 18px;
+    width: 30%;
+}
+
+footer {
+    background-color: var(--blue);
+    display: flex;
+    padding: 4.44444rem 4.44444rem 1.11111rem 6.44444rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.77778rem;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    gap: 11.16667rem;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--white);
 }
