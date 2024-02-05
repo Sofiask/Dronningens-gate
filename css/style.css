@@ -6,12 +6,13 @@ html, body {
 
 main {
     display: flex;
-    padding: 1.94444rem 1.11111rem 0rem 1.11111rem;
+    padding: 1.94444rem 1.11111rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 2.22222rem;
     align-self: stretch;
 }
+
 
 .background {
     width: 100%;
@@ -376,15 +377,14 @@ header img {
 }
 
 #map { 
-    /*position: absolute; */
     height: 500px; 
     width: 100%; 
 }
 
 .contact-container {
     display: flex;
-    padding: 2.22222rem 3.11111rem;
-    /*flex-direction: column;*/
+    padding: 1.94444rem 1.11111rem;
+    flex-direction: column;
     align-items: flex-start;
     gap: 2.22222rem;
     align-self: stretch;
@@ -397,7 +397,6 @@ header img {
     align-items: flex-start;
     gap: 1rem;
     align-self: stretch;
-    width: -webkit-fill-available;
 }
 
 .contact {
@@ -406,17 +405,35 @@ header img {
     align-items: center;
     gap: 1rem;
     align-self: stretch;
-    width: -webkit-fill-available;
+}
+
+@media screen and (min-width: 750px) {
+    .contact-container {
+        display: flex;
+        padding: 2.22222rem 6.11111rem;
+        background: #FFF;
+        flex-direction: row;
+        gap: 90px;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .maps {
+        width: 100%;
+    }
+    
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    width: 100%;
 }
 
 input {
-    width: 26rem;
     padding: 12px 12px;
     margin: 0px 0px 8px 0px;
     box-sizing: border-box;
@@ -424,7 +441,6 @@ input {
 }
 
 input[type=textarea] {
-    width: 100%;
     height: 90px;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -454,17 +470,18 @@ input[type=button] {
 footer {
     background-color: var(--blue);
     display: flex;
-    padding: 4.44444rem 4.44444rem 1.11111rem 6.44444rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 2.77778rem;
+    padding: 1.94444rem 1.11111rem;
+    gap: 2.22222rem;
 }
 
 .footer-container {
     display: flex;
     align-items: center;
-    gap: 11.16667rem;
+    gap: 4rem;
+    flex-direction: column;
 }
 
 .footer-box {
@@ -472,5 +489,26 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: var(--white);
+    gap: 0.55556rem;
+    width: 100%;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-img img {
+    width: 90%;
+}
+
+.copyright {
+    text-align: center;
 }
