@@ -21,15 +21,15 @@
     <header>
         <nav class="nav-bar">
             <div class="logo">
-                <img src="./css/Bilder/Logo/Logo dark.svg" alt="logo"> 
+               <a href=""><img src="./css/Bilder/Logo/Logo dark.svg" alt="logo"> </a>
             </div>
             <div class="menu">
                 <img src="./css/Bilder/Logo/icon/hamburger.svg" class="mobile-menu-icon" alt="menu">
             </div> 
             <ul class="nav">
-                <li><h4>Dokumenter</h4></li>
-                <li><h4>Forretningsfører</h4></li>
-                <button class="button-primary"><h4 class="white">Kontakt</h4></button>
+                <a href="#dokumenter"><li><h4>Dokumenter</h4></li></a>
+                <a href="#forretningsfører"><li><h4>Forretningsfører</h4></li></a>
+                <a href="#kontakt"><button class="primary"><h4 class="white">Kontakt</h4></button></a>
             </ul>
         </nav>
 
@@ -38,8 +38,8 @@
                 <img src="./css/Bilder/Logo/icon/x.svg" alt="">
             </div>
             <ul>
-                <li><h3 class="white">Dokumenter</h3></li>
-                <li><h3 class="white">Forretningsfører</h3></li>
+                <a href="#dokumenter"><li><h3 class="white">Dokumenter</h3></li></a>
+                <a href="#forretningsfører"><li><h3 class="white">Forretningsfører</h3></li></a>
             </ul>
             <img src="./css/Bilder/Logo/Logo white.svg" alt="">
         </nav>
@@ -105,14 +105,14 @@
                 </div>    
             </div>
         </div>
-        <div class="document">
+        <div class="document" id="dokumenter">
             <div class="text-box">
                 <h2>Dokumenter</h2>
                 <p>Informasjon om Dronningens gate 11</p>
             </div>
             <div class="document-container">
                 <div class="document-box">
-                    <p class="p-large white">Vedtekter</p>
+                    <p class="p-large-SB white">Vedtekter</p>
                 </div>
                 <div class="document-box">
                     <p class="p-large-SB white">Husordensregler</p>
@@ -125,11 +125,11 @@
                     <p class="p-large-SB white">Styrets årsberetning</p>
                 </div>
             </div>
-            <button class="button-secondary"><p class="white">Arkiv årsrapporter</p></button>
+            <button class="secondary"><p class="white">Arkiv årsrapporter</p></button>
         </div>
     </main>
     <section>
-        <div class="contact-container">
+        <div class="contact-container" id="kontakt">
             <div class="contact">
                 <div class="text-box-left">
                     <h2>Kontakt</h2>
@@ -147,7 +147,7 @@
                         <input type="tel" name="phone" placeholder="Telefon" required>
                         <label for="message">Din melding:</label>
                         <input type="textarea" name="message" placeholder="Din melding" required>
-                        <input type="button" value="Send">
+                        <input type="button" class="primary" value="Send">
                     </form>
             </div>
             <div class="maps">
@@ -160,17 +160,17 @@
         </div>
     </section>
     <footer>
-        <div class="footer-container">
+        <div class="footer-container" id="forretningsfører">
             <div class="footer-box">
                 <div class="footer-text">
-                        <a class="white" href="https://www.advokatguiden.no/advokat/5328-kari-lise-bjolgerud">
-                            <h2 class="white">Kari Lise Bjølgerud</h2></a>
-                        <h3 class="p-large white">Advokatfirma Fru Justitia
+                        <a class="white underline" href="https://www.advokatguiden.no/advokat/5328-kari-lise-bjolgerud">
+                            <h2 class="h2footer white">Kari Lise Bjølgerud</h2></a>
+                        <p class="p-largeFooter white">Advokatfirma Fru Justitia
                         <br>
-                        Adv. Kari Lise Bjølgerud</h3>
+                        Adv. Kari Lise Bjølgerud</p>
                     <div class="lise"></div>
                 </div>    
-                    <p class="white">Dølebakken 27 <br>
+                    <p class="pFooter white">Dølebakken 27 <br>
                         3215 Sandefjord
                         <br>
                         E-post: bjolgerud@frujustitia.no <br>
@@ -178,10 +178,10 @@
             </div>
             <div class="footer-box">
                 <div class="footer-text">
-                        <h2 class="white">Vaktmester</h2>
-                        <h3 class="p-large white">Vedlikehold & Vaktmesterservice AS</h3>
+                        <h2 class="h2footer white">Vaktmester</h2>
+                        <p class="p-largeFooter white">Vedlikehold & <br> Vaktmesterservice AS</p>
                 </div>   
-                    <p class="white">Semsbakken 15 <br>
+                    <p class="pFooter white">Semsbakken 15 <br>
                         3220 Sandefjord
                         <br>
                         E-post: post@vv-as.no
@@ -191,20 +191,20 @@
             </div>
             <div class="footer-box">
                 <div class="footer-text">
-                       <a class="white" href="https://www.gjensidige.no/"><h2 class="white">Forsikring</h2></a>
+                       <a class="white underline" href="https://www.gjensidige.no/"><h2 class="h2footer white">Forsikring</h2></a>
                 </div>   
-                    <p class="white"> Sameiet er forsikret i Gjensidige. <br>
+                    <p class="pFooter white"> Sameiet er forsikret i Gjensidige. <br>
                         Forsikringsnummer 80544494. <br>
                         Hovedforfall 1.1.
                        </p>
+                    </div>
+            <div class="footer-img">
+               <a href=""> <img src="./css/Bilder/Logo/Logo white.svg" alt=""></a>
             </div>
-        </div>
-        <div class="footer-img">
-            <img src="./css/Bilder/Logo/Logo white.svg" alt="">
-        </div>
+        </div>    
         <div class="copyright">
-            <p class="white">CopyRight© Sofia Skärberg 2023
-            www.sofiaskarberg.com</p>
+            <p class="pFooter white">CopyRight© Sofia Skärberg 2023
+           <a href="sofiaskarberg.com" class="pFooter white"> www.sofiaskarberg.com</p></a>
         </div>
     </footer>
 </body>
