@@ -137,8 +137,10 @@
                 </div>
                     <form action="https://formsubmit.co/sofiaskarberg@hotmail.com" method="POST">
                         <!-- <input type="hidden" name="_cc" value="another@email.com, another@email.com">-->
+                        <input type="hidden" name="_cc" value="sofiaskarberg@hotmail.com">
+                        <input type="hidden" name="_autoresponse" value="Takk for at du tar kontakt med styret i Dronningensgate 11. Vi svarer på din henvendelse så snart vi kan">
                         <input type="hidden" name="_subject" value="Mail fra Dronningens gate 11">
-                        <input type="hidden" name="_captcha" value="false">
+                        <!-- <input type="hidden" name="_captcha" value="false"> -->
                         <label for="fname">Navn:</label>
                         <input type="text" name="fname" placeholder="Navn" required>
                         <label for="email">E-post:</label>
@@ -147,7 +149,7 @@
                         <input type="tel" name="phone" placeholder="Telefon" required>
                         <label for="message">Din melding:</label>
                         <input type="textarea" name="message" placeholder="Din melding" required>
-                        <input type="button" class="primary" value="Send">
+                        <button type="submit">Send</button>
                     </form>
             </div>
             <div class="maps">

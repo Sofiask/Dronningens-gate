@@ -192,6 +192,25 @@ header img {
     display: none;
 }
 
+button {
+    display: flex;
+    padding: 0.77778rem 1.11111rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.55556rem;
+    background-color: var(--grey);
+    border: none;
+    color: #FFF;
+    font-size: 18px;
+    width: 30%;
+}
+
+button:hover {
+    background-color: var(--blue);
+    text-decoration: none;
+}
+
+
 .primary {
     display: flex;
     padding: 0.77778rem 1.11111rem;
@@ -388,7 +407,6 @@ header img {
     
     .document-box {
         width: 40.55556rem;
-        
     }
 }
 
