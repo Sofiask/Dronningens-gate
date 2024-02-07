@@ -157,7 +157,7 @@ header img {
 }
 
 .overlay-menu img {
-    width: 100%;
+    width: 50%;
 }
 
 .overlay-menu ul {
@@ -238,6 +238,7 @@ header img {
         justify-content: center;
         align-items: center;
         gap: 1.44444rem;
+        text-align: center;
     }
 
     .text-box-padding {
@@ -521,7 +522,7 @@ footer {
 }
 
 .footer-img img {
-    width: 90%;
+    width: 100%;
 }
 
 .copyright {
@@ -556,5 +557,18 @@ footer {
     .footer-img img {
         width: 70%;
         padding-top: 50px;
+    }
+}
+
+.archive-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: inherit;
+}
+
+@media screen and (min-width: 750px) {
+    .archive-container {
+        justify-content: center;
     }
 }
