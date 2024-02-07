@@ -219,6 +219,7 @@ button:hover {
     gap: 0.55556rem;
     background-color: var(--grey);
     border: none;
+    width: 100%;
 }
 
 .primary:hover {
