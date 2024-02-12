@@ -382,6 +382,10 @@ button:hover {
     align-self: stretch;
 }
 
+.document-container a {
+    width: 100%;
+}
+
 .document-box {
     display: flex;
     padding: 1.11111rem 1.16667rem;
