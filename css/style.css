@@ -384,6 +384,7 @@ button:hover {
 
 .document-container a {
     width: 100%;
+    text-decoration: none;
 }
 
 .document-box {

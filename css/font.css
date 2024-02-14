@@ -49,8 +49,6 @@ h4 {
     line-height: 150%;
 }
 
-
-
 .p-large-SB {
     font-family: var(--font-paragraph);
     font-size: 20px;
@@ -148,8 +146,4 @@ a:hover {
 
 button:hover {
     text-decoration: none;
-}
-
-.underline {
-    text-decoration: underline;
 }
